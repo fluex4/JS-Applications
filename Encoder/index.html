@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <label id="input">Enter Text:</label><br>
+            <input type="text" id="in">
+        </div>
+        <div class="card">
+            <label id="output">Encrypted Text:</label><br>
+            <input type="text" id="out">
+        </div>
+        <div class="card">
+            <h4>Type:</h4><br>
+            <label for="enc">Encrypt</label>
+            <input type="radio" name="opt" id="enc" checked><br><br><br>
+            <label for="dnc">Decrypt</label>
+            <input type="radio" name="opt" id="dnc" >
+        </div>
+        <div class="card">
+            <button onclick="generate()">Generate</button>
+            <button onclick="copy()"> Copy</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
